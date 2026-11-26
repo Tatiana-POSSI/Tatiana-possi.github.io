@@ -1,0 +1,50 @@
+---
+title: Research
+subtitle: Time series econometrics, mathematical statistics and applications to finance.
+description: Current doctoral research in time series econometrics and master's theses by Rayda Tatiana Possi Tahabo on ARMAX residuals, portfolio optimization and financial risk.
+body-classes: section-page
+html-math-method: plain
+listing:
+  id: research-archive
+  contents: projects/**/*.qmd
+  template: ../_includes/research-list.ejs.md
+  sort: "year desc"
+---
+
+::::::: {.editorial-section .research-focus}
+
+:::::: {.section-label}
+
+## Current doctoral research
+
+::::::
+
+:::::: {.section-content}
+
+My doctoral research focuses on statistical methods for detecting structural breaks in time series models. I investigate the asymptotic behaviour of residual partial-sum processes in ARMA, ARMAX and multivariate models, including specifications with deterministic trends and unit roots.
+
+My broader interests include asymptotic inference, statistical testing, and applications to economics and finance.
+
+::::::
+
+:::::::
+
+::::::: {.editorial-section}
+
+:::::: {.section-label}
+
+## Research interests
+
+::::::
+
+:::::: {.section-content}
+
+{{< include ../_includes/research-interests.qmd >}}
+
+::::::
+
+:::::::
+
+::::::: {#research-archive}
+
+:::::::

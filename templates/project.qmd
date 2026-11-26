@@ -1,0 +1,23 @@
+---
+title: Approved project title
+description: Short plain-text project summary
+record-label: Replication package
+period: Verified release date
+year: 2026
+body-classes: detail-page
+draft: true
+---
+
+## Overview
+
+<!-- Describe the purpose, supported software and relationship to a paper. -->
+
+## Installation and use
+
+<!-- Include the verified version, dependencies and a minimal reproducible
+example. Link to documentation, the repository, approved data downloads and
+the licence. Omit resources that are not intended for the public. -->
+
+<!-- Add an approved citation in references.bib and enable citeproc with
+bibliography and nocite when available. Record dataset permissions and
+redistribution terms before adding a data download. -->

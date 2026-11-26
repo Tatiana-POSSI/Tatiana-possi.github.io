@@ -1,0 +1,17 @@
+---
+title: Stochastic Calculus for Finance
+description: Master's-level teaching in stochastic calculus applied to finance, including lectures, mathematical exercises and student assessment.
+record-label: Course Instructor
+institution: University of Luxembourg
+period: Summer 2026
+year: 2026
+body-classes: detail-page
+---
+
+[{{< meta record-label >}} · {{< meta period >}}]{.eyebrow}
+
+[Master's programme in {{< meta academic.mqef >}} (MQEF)]{.detail-lead}
+
+{{< meta institution >}}
+
+I taught master's-level lectures in stochastic calculus for finance, prepared exercises and assessed students.

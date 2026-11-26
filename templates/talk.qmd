@@ -1,0 +1,16 @@
+---
+title: Verified event or activity title
+description: Short plain-text summary
+record-label: Research seminar
+period: Verified event date
+year: 2026
+body-classes: detail-page
+draft: true
+---
+
+<!-- Set record-label to the real category. Examples include conference
+presentation, seminar, workshop, academic visit, volunteering and mentoring. -->
+
+<!-- Add the verified event date, host, venue and role. Include only approved
+talk abstracts, slides, recordings and programme links. Move the approved
+record to activities/entries/ and remove draft: true. -->

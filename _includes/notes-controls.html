@@ -1,0 +1,36 @@
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const listing = document.querySelector("#listing-notes-index");
+    const categoryList = document.querySelector(".quarto-listing-category");
+    const categories = categoryList?.querySelectorAll(".category");
+    if (!listing?.querySelector(".notes-records") || !categories?.length) return;
+
+    const heading = document.querySelector(".quarto-listing-category-title");
+    heading.onclick = null;
+    listing.prepend(heading, categoryList);
+    listing.querySelector("input.search")?.setAttribute("aria-label", "Filter notes");
+
+    // Quarto owns the listing behavior. Give its clickable labels keyboard controls.
+    for (const control of categories) {
+      control.tabIndex = 0;
+      control.setAttribute("role", "button");
+      control.addEventListener("keydown", event => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          control.click();
+        }
+      });
+    }
+
+    const syncPressedState = () => {
+      for (const category of categories) {
+        category.setAttribute("aria-pressed", String(category.classList.contains("active")));
+      }
+    };
+    const observer = new MutationObserver(syncPressedState);
+    for (const category of categories) {
+      observer.observe(category, { attributes: true, attributeFilter: ["class"] });
+    }
+    syncPressedState();
+  });
+</script>

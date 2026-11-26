@@ -1,0 +1,19 @@
+---
+title: Approved course title
+description: Short plain-text course description
+record-label: Course Instructor
+institution: Approved institution
+period: Approved teaching term
+year: 2026
+body-classes: detail-page
+draft: true
+---
+
+<!-- Add the verified programme and a short course description. -->
+
+<!-- Add headings only for resources explicitly approved for public release.
+Supported resources include the syllabus, lecture notes, mathematical exercises,
+worked solutions, recommended textbooks, MATLAB code and supplementary material.
+Check rights and remove student information and assessment materials from any
+file before including it in the repository. Store public files in
+assets/documents/approved/ or alongside the course page with a relative link. -->

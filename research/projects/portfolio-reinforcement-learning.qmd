@@ -1,0 +1,41 @@
+---
+title: Portfolio Optimization Using Reinforcement Learning
+description: Reinforcement learning for portfolio allocation, compared with Black–Litterman and other machine learning methods.
+research-type: thesis
+record-label: Master's thesis
+institution: African Institute for Mathematical Sciences
+year: 2024
+period: January – April 2024
+featured: true
+body-classes: detail-page
+bibliography: ../../references.bib
+nocite: '@possi-tahabo-2024-portfolio'
+---
+
+[{{< meta record-label >}} · {{< meta institution >}} · {{< meta year >}}]{.eyebrow}
+
+This thesis compares reinforcement learning for portfolio optimisation with the Black–Litterman model and several machine learning methods, including support vector machines, decision trees and long short-term memory networks.
+
+::: {.detail-facts}
+Author
+: {{< meta academic.name >}}.
+
+Research period
+: {{< meta period >}}.
+
+Grade
+: Distinction (A+).
+
+Supervisor
+: Dr. Yaé U. Gaba.
+
+Keywords
+: Portfolio optimization, reinforcement learning, asset allocation.
+:::
+
+## Citation
+
+::: {#refs}
+:::
+
+[Download BibTeX bibliography](../../references.bib){.action-text}

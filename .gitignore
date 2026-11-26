@@ -1,0 +1,19 @@
+# Rendered output and local Quarto state
+/_site/
+/_site-*/
+/.quarto/
+/_freeze/
+/_quarto-production.yml
+
+# Review materials are kept outside the published site
+/private/
+/backups/
+/assets/documents/review/
+/review/
+/*.pdf
+/*.bundle
+/.env
+/.env.*
+.DS_Store
+
+**/*.quarto_ipynb

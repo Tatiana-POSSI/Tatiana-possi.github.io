@@ -1,0 +1,86 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - research/index.qmd
+    - research/projects/**/*.qmd
+    - teaching/index.qmd
+    - teaching/courses/**/*.qmd
+    - cv/index.qmd
+    - code/index.qmd
+    - code/projects/**/*.qmd
+    - notes/index.qmd
+    - notes/posts/**/*.qmd
+    - activities/index.qmd
+    - activities/entries/**/*.qmd
+  resources:
+    - assets/images/**
+    - assets/fonts/**
+    - assets/vendor/mathjax/**
+    - assets/documents/approved/**
+    - references.bib
+
+website:
+  title: Rayda Tatiana Possi Tahabo
+  site-url: https://tatiana-possi.github.io
+  description: Doctoral Researcher in Finance at the University of Luxembourg, working on time series econometrics and mathematical statistics.
+  favicon: assets/images/favicon.png
+  image: assets/images/share.png
+  image-alt: Rayda Tatiana Possi Tahabo, Doctoral Researcher in Finance at the University of Luxembourg
+  open-graph: true
+  search:
+    location: navbar
+    type: overlay
+  draft-mode: gone
+  bread-crumbs: false
+  navbar:
+    pinned: true
+    collapse-below: lg
+    right:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: research/index.qmd
+      - text: Teaching
+        href: teaching/index.qmd
+      - text: CV
+        href: cv/index.qmd
+      - text: Code & Data
+        href: code/index.qmd
+      - text: Notes
+        href: notes/index.qmd
+  page-footer:
+    left: Rayda Tatiana Possi Tahabo
+    center:
+      - text: rayda.possi@uni.lu
+        href: mailto:rayda.possi@uni.lu
+      - text: University profile
+        href: https://www.uni.lu/fdef-en/people/rayda-tatiana-possi-tahabo/
+    right:
+      - text: Academic activities
+        href: activities/index.qmd
+
+lang: en
+metadata-files: [_academic.yml]
+execute:
+  enabled: false
+
+format:
+  html:
+    theme:
+      light: [default, styles/light.scss]
+      dark: [default, styles/dark.scss]
+    css: styles/site.css
+    page-layout: full
+    toc: false
+    title-block-banner: false
+    anchor-sections: false
+    canonical-url: true
+    respect-user-color-scheme: true
+    # The Pandoc metadata flag disables the legacy ES6 polyfill, while
+    # html-math-method still renders equations using the local MathJax bundle.
+    mathjax: false
+    html-math-method:
+      method: mathjax
+      url: /assets/vendor/mathjax/tex-chtml-full.js
