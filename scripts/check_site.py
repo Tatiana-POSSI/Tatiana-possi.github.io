@@ -18,6 +18,7 @@ MAIN_PAGES = (
 )
 PRIVATE_DIRECTORIES = ("templates", "private", "scripts", ".github")
 PUBLIC_CV = "assets/documents/approved/rayda-tatiana-possi-tahabo-cv.pdf"
+GOOGLE_VERIFICATION_FILE = "google41220a8d21a06f51.html"
 
 
 class Page(HTMLParser):
@@ -66,16 +67,22 @@ def check(root, base_url, review):
             or name.startswith("assets/documents/review/")
         ):
             errors.append(f"Review or source material in the rendered site: {name}")
-    required = set(MAIN_PAGES) | {"search.json", "references.bib", PUBLIC_CV}
+    required = set(MAIN_PAGES) | {"search.json", "references.bib", PUBLIC_CV, GOOGLE_VERIFICATION_FILE}
     if base_url:
         required.add("sitemap.xml")
     for missing in sorted(required - relative_files):
         errors.append(f"Missing expected output: {missing}")
 
+    verification_file = root / GOOGLE_VERIFICATION_FILE
+    if GOOGLE_VERIFICATION_FILE in relative_files:
+        expected_marker = f"google-site-verification: {GOOGLE_VERIFICATION_FILE}".encode("ascii")
+        if verification_file.read_bytes() != expected_marker:
+            errors.append(f"Unexpected contents in {GOOGLE_VERIFICATION_FILE}")
+
     pages = {
         path.relative_to(root).as_posix(): Page(path)
         for path in files
-        if path.suffix == ".html"
+        if path.suffix == ".html" and path != verification_file
     }
     for name, page in pages.items():
         for identifier, count in page.ids.items():

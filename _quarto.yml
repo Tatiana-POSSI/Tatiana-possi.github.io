@@ -16,6 +16,7 @@ project:
     - activities/index.qmd
     - activities/entries/**/*.qmd
   resources:
+    - google41220a8d21a06f51.html
     - assets/images/**
     - assets/fonts/**
     - assets/vendor/mathjax/**
