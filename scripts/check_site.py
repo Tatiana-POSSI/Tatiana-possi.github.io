@@ -88,8 +88,7 @@ def check(root, base_url, review):
             errors.append(f"{name}: unexpected robots directive for this profile")
         if base_url:
             expected = production_url(base_url, name)
-            valid = {expected, f"{base_url.rstrip('/')}/{name}"}
-            if page.canonical not in valid:
+            if page.canonical != expected:
                 errors.append(f"{name}: expected canonical address {expected}, got {page.canonical}")
             if not page.meta.get("og:image", "").startswith(base_url.rstrip("/") + "/"):
                 errors.append(f"{name}: missing absolute Open Graph image")
@@ -125,11 +124,13 @@ def check(root, base_url, review):
             errors.append("Website search does not index all six main pages")
     if "sitemap.xml" in relative_files and base_url:
         sitemap = ElementTree.parse(root / "sitemap.xml")
-        locations = {element.text for element in sitemap.findall(".//{*}loc")}
+        locations = Counter(element.text for element in sitemap.findall(".//{*}loc"))
         for name in pages:
-            valid = {production_url(base_url, name), f"{base_url.rstrip('/')}/{name}"}
-            if not locations.intersection(valid):
-                errors.append(f"{name}: missing from sitemap")
+            canonical = production_url(base_url, name)
+            if locations.pop(canonical, 0) != 1:
+                errors.append(f"{name}: expected exactly one sitemap entry for {canonical}")
+        for location in locations:
+            errors.append(f"Unexpected sitemap entry: {location}")
 
     for error in errors:
         print(error)
