@@ -1,0 +1,155 @@
+---
+pagetitle: Rayda Tatiana Possi Tahabo
+description: Rayda Tatiana Possi Tahabo is a doctoral researcher in finance at the University of Luxembourg with interests in time series econometrics and structural change.
+title-block-style: none
+body-classes: home-page
+html-math-method: plain
+include-in-header: _includes/person.html
+listing:
+  id: selected-research
+  contents: research/projects/**/*.qmd
+  template: _includes/research-list.ejs.md
+  template-params:
+    featured: true
+  sort: "year desc"
+---
+
+::::::: {.home-intro}
+
+:::::: {.home-identity}
+
+[{{< meta academic.role >}}]{.eyebrow}
+
+# {{< meta academic.name >}} {#academic-profile .home-name}
+
+[{{< meta academic.affiliation >}}]{.home-affiliation}
+
+::::::
+
+```{=html}
+<div class="home-profile">
+  <figure class="home-portrait">
+    <img src="assets/images/rayda-tatiana-possi-tahabo.webp" width="900" height="1125" alt="Portrait of Rayda Tatiana Possi Tahabo" decoding="async" fetchpriority="high">
+  </figure>
+  <nav aria-label="Professional contact and profiles">
+    <ul class="professional-links">
+      <li class="professional-email"><a href="mailto:rayda.possi@uni.lu"><i class="bi bi-envelope" aria-hidden="true"></i>rayda.possi@uni.lu</a></li>
+      <li><a href="https://www.uni.lu/fdef-en/people/rayda-tatiana-possi-tahabo/"><i class="bi bi-building" aria-hidden="true"></i>University profile</a></li>
+      <li><a href="https://lu.linkedin.com/in/rayda-tatiana-possi-666500268"><i class="bi bi-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+      <li><a href="https://github.com/Tatiana-POSSI"><i class="bi bi-github" aria-hidden="true"></i>GitHub</a></li>
+    </ul>
+  </nav>
+</div>
+```
+
+:::::: {.home-biography}
+
+My doctoral research focuses on methods for detecting structural breaks in time series. I study how trends and unit roots affect residual-based tests, with broader interests in inference for multivariate models and applications to economics and finance.
+
+I hold master's degrees in {{< meta academic.mqef >}} from the University of Luxembourg, Mathematical Sciences from the African Institute for Mathematical Sciences (AIMS), and Applied Mathematics from the University of Yaoundé I, where I specialised in probability, statistics and finance.
+
+::::: {.home-links}
+
+[Explore research](research/index.qmd){.action-primary} [View academic CV](cv/index.qmd){.action-text}
+
+:::::
+
+::::::
+
+:::::::
+
+::::::: {.award-feature}
+
+:::::: {.award-feature-date}
+
+[2025]{.eyebrow}
+
+::::::
+
+:::::: {.award-feature-content}
+
+## Economist Club Luxembourg Award
+
+Co-recipient of the prize for best master's thesis in {{< meta academic.mqef >}} at the University of Luxembourg.
+
+::::::
+
+[Honours and awards](cv/index.qmd#honours-and-awards){.action-text}
+
+:::::::
+
+::::::: {.editorial-section .home-section}
+
+:::::: {.section-label}
+
+## Research interests
+
+::::::
+
+:::::: {.section-content}
+
+{{< include _includes/research-interests.qmd >}}
+
+::::::
+
+:::::::
+
+::::::: {.editorial-section .home-section}
+
+:::::: {.section-label}
+
+## Selected master's research
+
+::::::
+
+:::::: {.section-content}
+
+::::: {#selected-research}
+
+:::::
+
+[All research](research/index.qmd){.action-text}
+
+::::::
+
+:::::::
+
+::::::: {.editorial-section .home-section .home-distinctions}
+
+:::::: {.section-label}
+
+## Selected distinctions
+
+::::::
+
+:::::: {.section-content}
+
+::::: {.compact-record}
+
+[Sep 2024 – Jul 2025]{.record-date}
+
+:::: {.record-copy}
+
+### ABBL Foundation Scholarship
+University of Luxembourg
+
+::::
+
+:::::
+
+::::: {.compact-record}
+
+[June 2024]{.record-date}
+
+:::: {.record-copy}
+
+### Winner, Three Minutes Thesis Competition
+AIMS Cameroon Career Day
+
+::::
+
+:::::
+
+::::::
+
+:::::::

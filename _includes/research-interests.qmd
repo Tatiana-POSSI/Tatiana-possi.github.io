@@ -1,0 +1,27 @@
+:::: {.research-themes}
+
+::: {.research-theme}
+### Time series econometrics
+
+ARMA, ARMAX and multivariate models, including VARMA.
+:::
+
+::: {.research-theme}
+### Mathematical statistics
+
+Asymptotic theory, inference and statistical testing.
+:::
+
+::: {.research-theme}
+### Structural break detection
+
+Residual partial sums, deterministic trends and unit roots.
+:::
+
+::: {.research-theme}
+### Financial econometrics
+
+Mathematical finance and applications to economic and financial data.
+:::
+
+::::

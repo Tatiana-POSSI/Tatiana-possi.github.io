@@ -1,0 +1,54 @@
+---
+title: Teaching
+subtitle: Stochastic calculus for finance and prior science teaching.
+description: Teaching experience of Rayda Tatiana Possi Tahabo at the University of Luxembourg and in Yaoundé, Cameroon.
+body-classes: section-page
+html-math-method: plain
+listing:
+  id: course-list
+  contents: courses/**/*.qmd
+  template: ../_includes/record-list.ejs.md
+  sort: "year desc"
+---
+
+::::::: {.editorial-section}
+
+:::::: {.section-label}
+
+## University of Luxembourg
+
+::::::
+
+:::::: {.section-content}
+
+::::: {#course-list}
+
+:::::
+
+::::::
+
+:::::::
+
+::::::: {.editorial-section}
+
+:::::: {.section-label}
+
+## Previous teaching
+
+::::::
+
+:::::: {.section-content}
+
+::::: {.record-body}
+
+[August 2021 – June 2023]{.record-meta}
+
+### Volunteer Science Teacher
+
+Taught science courses at an examination preparation centre in Yaoundé, Cameroon.
+
+:::::
+
+::::::
+
+:::::::

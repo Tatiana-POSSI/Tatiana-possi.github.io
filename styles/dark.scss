@@ -1,0 +1,32 @@
+/*-- scss:defaults --*/
+
+$body-bg: #151f2a;
+$body-color: #d7e1eb;
+$link-color: #b5d3f4;
+$navbar-bg: #151f2a;
+$navbar-fg: #e2ebf5;
+$footer-bg: #1b2835;
+$footer-fg: #b7c6d4;
+$primary: #b5d3f4;
+$border-color: #3a4c60;
+$input-bg: #202f3e;
+$input-color: #edf3fa;
+$font-family-sans-serif: "Inter", system-ui, sans-serif;
+$headings-font-family: "Source Serif 4", Georgia, serif;
+$enable-smooth-scroll: false;
+
+/*-- scss:rules --*/
+
+:root {
+  --paper: #151f2a;
+  --ink: #d7e1eb;
+  --heading: #f0f5fa;
+  --quiet: #b7c6d4;
+  --link: #b5d3f4;
+  --accent: #efad91;
+  --rule: #3a4c60;
+  --surface: #1b2835;
+  --action: #bfdaf6;
+  --action-hover: #d5e8fd;
+  --action-text: #15283c;
+}

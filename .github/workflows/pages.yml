@@ -1,0 +1,77 @@
+name: Build Quarto website
+
+'on':
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  SITE_URL: https://tatiana-possi.github.io
+
+concurrency:
+  group: quarto-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: '1.11.9'
+
+      - name: Render and validate website
+        run: |
+          quarto render
+          python3 scripts/check_site.py _site --site-url "$SITE_URL"
+
+      - name: Read the approved GitHub Pages address
+        id: pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PAGES_PUBLISH == 'true'
+        uses: actions/configure-pages@v6
+
+      - name: Confirm the GitHub Pages address
+        if: steps.pages.outcome == 'success'
+        env:
+          PAGES_URL: ${{ steps.pages.outputs.base_url }}
+        run: |
+          if [ "${PAGES_URL%/}" != "$SITE_URL" ]; then
+            printf 'Expected GitHub Pages at %s, received %s\n' "$SITE_URL" "$PAGES_URL" >&2
+            exit 1
+          fi
+
+      - name: Upload the website artifact
+        if: steps.pages.outcome == 'success'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PAGES_PUBLISH == 'true'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

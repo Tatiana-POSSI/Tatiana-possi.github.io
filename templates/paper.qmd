@@ -1,0 +1,34 @@
+---
+title: Approved research title
+description: Short plain-text research summary
+research-type: working-paper
+record-label: Working paper
+year: 2026
+featured: false
+body-classes: detail-page
+draft: true
+# bibliography: ../../references.bib
+# nocite: '@verified-citation-key'
+---
+
+<!--
+Keep this file in a private workspace until it is approved. Remove draft: true
+only for an approved record in research/projects/. Use research-type publication
+for a published paper, or thesis or project for a completed previous project.
+Set record-label to the exact research status. Set featured: true to include
+this entry on the home page.
+-->
+
+<!-- Add approved authors in published order, followed by year and status. -->
+
+## Abstract
+
+<!-- Add the approved abstract and keywords. Omit the heading if there is no abstract. -->
+
+<!-- Include a verified journal, institution, DOI and approved file links where
+applicable. Approved supplementary materials can include a manuscript PDF,
+slides and replication code. Use descriptive link labels. -->
+
+<!-- When a citation has been added to references.bib, enable bibliography and
+nocite above, add a Citation heading and a Pandoc div with the ID refs.
+A BibTeX download can link to ../../references.bib or an individual entry. -->

@@ -1,0 +1,45 @@
+---
+title: "On Partial-Sum Processes of ARMAX Residuals: ARMA with Polynomial Time Trends and Unit Roots"
+description: Asymptotic properties of ARMAX residual partial sums and a structural break test for models with polynomial trends and unit roots.
+research-type: thesis
+record-label: Master's thesis
+institution: University of Luxembourg
+year: 2025
+period: February – August 2025
+award: Economist Club Luxembourg Award for best master's thesis (co-recipient)
+featured: true
+body-classes: detail-page
+bibliography: ../../references.bib
+nocite: '@possi-tahabo-2025-armax'
+---
+
+[{{< meta record-label >}} · {{< meta institution >}} · {{< meta year >}}]{.eyebrow}
+
+This thesis studies the limiting behaviour of partial sums of residuals from ARMAX models, focusing on ARMA processes with polynomial deterministic trends and unit roots. It develops a structural break test statistic for settings where trends and unit roots may coexist. Simulated and real datasets illustrate the behaviour of the test.
+
+::: {.detail-facts}
+Author
+: {{< meta academic.name >}}.
+
+Research period
+: {{< meta period >}}.
+
+Supervisors
+: Prof. Benjamin Holcblat and Prof. Steffen Grønneberg.
+
+Grade
+: 20/20 (A+).
+
+Distinction
+: Co-recipient of the 2025 Economist Club Luxembourg Award for best master's thesis.
+
+Keywords
+: ARMAX, residual partial sums, polynomial time trends, unit roots, structural breaks.
+:::
+
+## Citation
+
+::: {#refs}
+:::
+
+[Download BibTeX bibliography](../../references.bib){.action-text}

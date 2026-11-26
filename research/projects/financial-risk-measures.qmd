@@ -1,0 +1,40 @@
+---
+title: "Risk Measures: Theory and Application in Financial Analysis"
+description: Representations of monetary, coherent and convex risk measures, with a Python simulation of Value-at-Risk for a financial strategy.
+research-type: thesis
+record-label: Master's thesis
+institution: University of Yaoundé I
+year: 2023
+period: July 2022 – November 2023
+body-classes: detail-page
+bibliography: ../../references.bib
+nocite: '@possi-tahabo-2023-risk'
+---
+
+[{{< meta record-label >}} · {{< meta institution >}} · {{< meta year >}}]{.eyebrow}
+
+This thesis examines monetary risk measures and the representation of coherent and convex risk measures. It applies the theory to a financial strategy by simulating its Value-at-Risk in Python.
+
+::: {.detail-facts}
+Author
+: {{< meta academic.name >}}.
+
+Research period
+: {{< meta period >}}.
+
+Grade
+: 82.5/100 (A).
+
+Supervisor
+: Prof. Mbele Bidima Martin Le Doux.
+
+Keywords
+: Risk measures, financial risk, Value-at-Risk.
+:::
+
+## Citation
+
+::: {#refs}
+:::
+
+[Download BibTeX bibliography](../../references.bib){.action-text}

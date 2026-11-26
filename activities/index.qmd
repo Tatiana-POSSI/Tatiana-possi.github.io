@@ -1,0 +1,112 @@
+---
+title: Academic activities
+subtitle: Scientific communication, mentoring and community outreach.
+description: Scientific communication, mentoring and community outreach by Rayda Tatiana Possi Tahabo.
+body-classes: section-page
+html-math-method: plain
+listing:
+  id: activity-list
+  contents: [../_includes/empty-listing.yml, 'entries/**/*.qmd']
+  template: ../_includes/record-list.ejs.md
+  template-params:
+    heading: Talks and academic engagement
+  sort: "year desc"
+---
+
+::::::: {.editorial-section}
+
+:::::: {.section-label}
+
+## Scientific communication
+
+::::::
+
+:::::: {.section-content}
+
+::::: {.record-body}
+
+[June 2024]{.record-meta}
+
+### Three Minutes Thesis Competition
+
+Winner, AIMS Cameroon Career Day. The competition asks graduate students to explain their research in three minutes to a non-specialist audience.
+
+:::::
+
+::::::
+
+:::::::
+
+::::::: {.editorial-section}
+
+:::::: {.section-label}
+
+## Community engagement
+
+::::::
+
+:::::: {.section-content}
+
+::::: {.compact-record}
+
+[2024]{.record-date}
+
+:::: {.record-copy}
+
+### AIMS community outreach
+
+Helped prepare data for Limbe City Council and mentored girls in secondary school in Limbe, Cameroon.
+
+::::
+
+:::::
+
+::::: {.compact-record}
+
+[July – August 2022]{.record-date}
+
+:::: {.record-copy}
+
+### Volunteer IT Tutor
+
+Helped community members use digital tools in Bafoussam, Cameroon.
+
+::::
+
+:::::
+
+::::: {.compact-record}
+
+[June – August 2022]{.record-date}
+
+:::: {.record-copy}
+
+### Youth Social Worker
+
+Mentored girls and supported youth inclusion initiatives with the Ministry of Youth in Bafoussam, Cameroon.
+
+::::
+
+:::::
+
+::::: {.compact-record}
+
+[Sep 2019 – Sep 2023]{.record-date}
+
+:::: {.record-copy}
+
+### Volunteer Trainer
+
+Led practical workshops in sewing, customisation and pastry-making in Yaoundé, Cameroon.
+
+::::
+
+:::::
+
+::::::
+
+:::::::
+
+::::::: {#activity-list}
+
+:::::::
