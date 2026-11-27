@@ -34,7 +34,7 @@ Research listings use each record’s `research-type` and `year`. Only types wit
 
 Reconcile academic names and dates against the latest CV provided privately and record any discrepancies for review. Add a professional email only after Rayda approves that specific address. Verify supplied academic profile URLs. Web portraits need descriptive alternative text and stripped metadata.
 
-To refresh the CV PDF, render the website and print the HTML CV to A4 using its print stylesheet. Keep the approved email and university profile links, and remove other PDF link annotations. Check the exported text and metadata for consistency with the HTML CV before requesting approval for the new PDF.
+To refresh the CV PDF, replace `assets/documents/approved/Rayda-Tatiana-Possi-Tahabo-CV.pdf` with the approved, privacy-checked LaTeX CV. Keep the filename stable. Quarto copies this static PDF into the site, and the build checks that the output matches the approved file byte for byte. Review the PDF text, links and metadata before requesting publication approval.
 
 ## Approve and publish through GitHub
 

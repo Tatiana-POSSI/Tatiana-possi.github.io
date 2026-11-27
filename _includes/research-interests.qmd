@@ -9,13 +9,13 @@ ARMA, ARMAX and multivariate models, including VARMA.
 ::: {.research-theme}
 ### Mathematical statistics
 
-Asymptotic theory, inference and statistical testing.
+Statistical inference and testing for structural change.
 :::
 
 ::: {.research-theme}
-### Structural break detection
+### Asymptotic theory
 
-Residual partial sums, deterministic trends and unit roots.
+The limiting behaviour of residual partial sums under deterministic trends and unit roots.
 :::
 
 ::: {.research-theme}

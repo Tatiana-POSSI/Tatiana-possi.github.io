@@ -44,7 +44,7 @@ listing:
 
 :::::: {.home-biography}
 
-My doctoral research focuses on methods for detecting structural breaks in time series. I study how trends and unit roots affect residual-based tests, with broader interests in inference for multivariate models and applications to economics and finance.
+I develop residual-based theory and statistical methods for detecting structural breaks in nonstationary multivariate time series models, under the supervision of {{< meta academic.supervisor >}}. My current work examines [partial sums of residuals in VARMA models](research/index.qmd#varma-partial-sum-residuals).
 
 I hold master's degrees in {{< meta academic.mqef >}} from the University of Luxembourg, Mathematical Sciences from the African Institute for Mathematical Sciences (AIMS), and Applied Mathematics from the University of Yaoundé I, where I specialised in probability, statistics and finance.
 
@@ -132,6 +132,19 @@ Co-recipient of the prize for best master's thesis in {{< meta academic.mqef >}}
 
 ### ABBL Foundation Scholarship
 University of Luxembourg
+
+::::
+
+:::::
+
+::::: {.compact-record .quarto-include-in-search-index}
+
+[June 2024]{.record-date}
+
+:::: {.record-copy}
+
+### Winner, Prof. Marco Garuti Award
+AIMS Cameroon. Academic excellence award recognising the top-ranked female student, who placed second overall in the 2023–2024 cohort.
 
 ::::
 
