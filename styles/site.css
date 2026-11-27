@@ -178,8 +178,7 @@ h1, h2, h3, h4 {
   letter-spacing: -.024em;
 }
 
-h1.title,
-h1.home-name {
+h1.title {
   margin: 0;
   border: 0;
   font-size: clamp(2.85rem, 5.8vw, 4.9rem);
@@ -286,73 +285,94 @@ p {
   text-underline-offset: .25rem;
 }
 
+.home-page #quarto-content > main.content,
+.section-page #quarto-content > main.content {
+  padding-top: clamp(2.1rem, 4vw, 3.4rem);
+}
+
+.section-page h1.title {
+  font-size: clamp(2.45rem, 5.2vw, 3.8rem);
+  line-height: 1.04;
+}
+
+.section-page #title-block-header {
+  margin-bottom: clamp(1.5rem, 3.5vw, 2.3rem);
+}
+
+.section-page #title-block-header .subtitle {
+  margin-top: .7rem;
+}
+
 .home-page #quarto-content > main.content {
-  padding-top: clamp(2.85rem, 5.4vw, 4.5rem);
-}
-
-.home-page #title-block-header {
-  display: none;
-}
-
-.home-intro {
   display: grid;
   grid-template-areas:
     "identity portrait"
-    "biography portrait";
-  grid-template-columns: minmax(0, 1fr) minmax(15rem, 19rem);
-  grid-template-rows: max-content 1fr;
+    "biography portrait"
+    "details details";
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, 15rem);
+  grid-template-rows: max-content 1fr auto;
   align-items: start;
-  column-gap: clamp(1.8rem, 6vw, 6.1rem);
-  row-gap: 1.15rem;
-  margin-bottom: clamp(2.2rem, 4.7vw, 3.6rem);
+  column-gap: clamp(1.65rem, 4.8vw, 4.25rem);
+  row-gap: 1.05rem;
 }
 
-.home-identity {
+.home-page #title-block-header {
   grid-area: identity;
+  margin: 0;
 }
 
 .home-biography {
   grid-area: biography;
 }
 
-h1.home-name {
-  max-width: 10em;
-  margin: .25rem 0 1rem;
-  font-size: clamp(3.5rem, 6.25vw, 5.4rem);
-  text-wrap: normal;
+.home-page h1.title {
+  font-size: clamp(2.75rem, 5.5vw, 4.2rem);
 }
 
 .home-biography p {
   max-width: 65ch;
-  font-size: 1.04rem;
 }
 
-.home-identity > p:first-child {
-  margin-bottom: .75rem;
-  color: var(--link);
+.home-biography > section {
+  margin-top: 1.4rem;
 }
 
-.home-identity p:last-child {
+.home-biography > :last-child > :last-child {
   margin-bottom: 0;
 }
 
-.home-affiliation {
-  display: inline-block;
-  margin-bottom: .35rem;
+.home-page #title-block-header .subtitle {
+  margin: .6rem 0 0;
   color: var(--link);
-  font-size: 1.10rem;
+  font-size: 1rem;
   font-weight: 550;
 }
 
-.home-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .18rem 1.2rem;
-  margin-top: 1.33rem;
+.home-biography h2,
+.home-details h2 {
+  margin-bottom: .55rem;
+  font-size: clamp(1.38rem, 2.6vw, 1.72rem);
+  text-wrap: wrap;
 }
 
-.home-links p {
-  display: contents;
+.home-details {
+  grid-area: details;
+  margin-top: .6rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid var(--rule);
+}
+
+.home-details > section + section {
+  margin-top: 1.4rem;
+}
+
+.home-details ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+
+.home-details li + li {
+  margin-top: .18rem;
 }
 
 .home-profile {
@@ -362,7 +382,7 @@ h1.home-name {
 
 .home-portrait {
   width: 100%;
-  margin: .34rem 0 .65rem;
+  margin: 0 0 .55rem;
 }
 
 .home-portrait img {
@@ -389,47 +409,11 @@ h1.home-name {
 .professional-links a {
   display: inline-flex;
   align-items: center;
-  gap: .43rem;
-  min-height: 2.4rem;
+  min-height: 2.1rem;
   color: var(--link);
   font-size: .88rem;
   font-weight: 550;
   text-decoration: underline;
-}
-
-.professional-links a .bi {
-  display: inline-block;
-  color: var(--quiet);
-}
-
-.award-feature {
-  display: grid;
-  grid-template-columns: max-content minmax(0, 1fr) max-content;
-  align-items: center;
-  gap: 1rem clamp(1rem, 4.2vw, 3rem);
-  margin-bottom: 2.6rem;
-  padding: clamp(1.2rem, 2.9vw, 1.65rem) clamp(1.15rem, 3.4vw, 1.95rem);
-  border-left: 3px solid var(--accent);
-  background: var(--surface);
-}
-
-.award-feature .eyebrow {
-  color: var(--accent);
-}
-
-.award-feature h2 {
-  margin-bottom: .24rem;
-  font-size: clamp(1.3rem, 2.6vw, 1.66rem);
-  text-wrap: wrap;
-}
-
-.award-feature p {
-  margin: 0;
-}
-
-.award-feature-content p {
-  color: var(--quiet);
-  font-size: .94rem;
 }
 
 .editorial-section {
@@ -456,6 +440,10 @@ h1.home-name {
 
 .section-content > p {
   max-width: 74ch;
+}
+
+.section-content > .record-body + .record-body {
+  margin-top: 1.25rem;
 }
 
 .research-focus .section-content > p:first-child {
@@ -490,67 +478,13 @@ h1.home-name {
   font-weight: 620;
 }
 
-:is(#listing-computational-projects, #listing-activity-list):not(:has(.record-list)),
-#listing-notes-index:not(:has(.notes-records)),
-.notes-page #quarto-margin-sidebar {
+#listing-activity-list:not(:has(.record-list)) {
   display: none;
 }
 
 .quarto-listing,
 .quarto-listing .list {
   padding: 0;
-}
-
-.notes-page #listing-notes-index {
-  margin-top: 1.4rem;
-}
-
-.notes-page .quarto-listing-category-title {
-  color: var(--heading);
-  cursor: auto;
-  font: 620 1rem/1.4 var(--sans);
-}
-
-.notes-page .quarto-listing-category {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .15rem 1rem;
-  margin-bottom: 1rem;
-}
-
-.notes-page .quarto-listing-category .category {
-  min-height: 2.1rem;
-  padding-block: .31rem;
-}
-
-.notes-page .quarto-listing-category .category.active {
-  color: var(--link);
-  font-weight: 660;
-}
-
-.notes-archive > h2 {
-  margin: 1.4rem 0 1rem;
-}
-
-.notes-records {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.topic-list ul {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: clamp(1.4rem, 3vw, 2.4rem);
-  margin: -.38rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.topic-list li {
-  padding-block: .55rem;
-  border-bottom: 1px solid var(--rule);
-  line-height: 1.44;
 }
 
 .record-list {
@@ -592,69 +526,29 @@ h1.home-name {
   margin-bottom: .31rem;
 }
 
-.home-section #listing-selected-research + p {
-  margin-top: .6rem;
-}
-
-.compact-record,
-.cv-record {
+.compact-record {
   display: grid;
   grid-template-columns: minmax(7.2rem, 21%) minmax(0, 1fr);
   align-items: baseline;
   gap: .3rem 1.25rem;
 }
 
-.compact-record + .compact-record,
-.cv-record + .cv-record {
+.compact-record + .compact-record {
   margin-top: .86rem;
   padding-top: .86rem;
   border-top: 1px solid var(--rule);
 }
 
-.compact-record h3,
-.cv-record h3 {
+.compact-record h3 {
   margin-bottom: .15rem;
 }
 
-.compact-record p,
-.cv-record p {
+.compact-record p {
   margin-bottom: .32rem;
 }
 
-.compact-record > :last-child > :last-child,
-.cv-record > :last-child > :last-child {
+.compact-record > :last-child > :last-child {
   margin-bottom: 0;
-}
-
-.cv-intro-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: .75rem 1.45rem;
-  margin: -1.15rem 0 2.1rem;
-}
-
-.cv-intro-actions p {
-  margin: 0;
-}
-
-.cv-contact p {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .2rem 1.1rem;
-}
-
-.cv-contact a {
-  font-size: .93rem;
-  text-decoration: underline;
-}
-
-.cv-page .cv-record {
-  grid-template-columns: minmax(8rem, 23%) minmax(0, 1fr);
-}
-
-.cv-page .cv-record h3 {
-  text-wrap: pretty;
 }
 
 .detail-page #quarto-content > main.content {
@@ -699,14 +593,12 @@ main mjx-container[jax="CHTML"][display="true"] {
   font-weight: 600;
 }
 
-.detail-facts dl,
-.tool-list dl {
+.detail-facts dl {
   margin: 1.65rem 0 0;
   border-top: 1px solid var(--rule);
 }
 
-.detail-facts dl > dt,
-.tool-list dl > dt {
+.detail-facts dl > dt {
   float: left;
   clear: left;
   padding-block: .56rem;
@@ -714,8 +606,7 @@ main mjx-container[jax="CHTML"][display="true"] {
   font-weight: 620;
 }
 
-.detail-facts dl > dd,
-.tool-list dl > dd {
+.detail-facts dl > dd {
   margin: 0;
   padding: .56rem 0 .56rem 8.5rem;
   border-bottom: 1px solid var(--rule);
@@ -803,46 +694,32 @@ footer.footer .nav-footer {
     padding-inline: .28rem;
   }
 
-  h1.home-name {
-    max-width: 9em;
-    font-size: clamp(3.05rem, 10.2vw, 4.35rem);
+  .home-page h1.title {
+    font-size: clamp(2.6rem, 9vw, 3.45rem);
   }
 
-  .home-intro {
+  .home-page #quarto-content > main.content {
     grid-template-areas:
       "identity"
       "portrait"
-      "biography";
+      "biography"
+      "details";
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: auto;
-    row-gap: 1.35rem;
+    row-gap: .95rem;
   }
 
   .home-portrait {
-    max-width: 14rem;
-    margin: 0 0 .55rem;
+    max-width: 11.5rem;
+    margin-bottom: .25rem;
   }
 
   .professional-links a {
-    min-height: 2.65rem;
-  }
-
-  .award-feature {
-    grid-template-columns: minmax(0, 1fr);
-    gap: .55rem;
-    margin-bottom: 2.05rem;
-  }
-
-  .award-feature .action-text {
-    min-height: 2.4rem;
+    min-height: 2.75rem;
   }
 
   .editorial-section {
     grid-template-columns: minmax(0, 1fr);
-  }
-
-  .topic-list ul {
-    margin-top: 0;
   }
 
   footer.footer .nav-footer {
@@ -851,24 +728,20 @@ footer.footer .nav-footer {
 }
 
 @media (max-width: 480px) {
-  .topic-list ul,
   .research-themes {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .compact-record,
-  .cv-page .cv-record {
+  .compact-record {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .detail-facts dl > dt,
-  .tool-list dl > dt {
+  .detail-facts dl > dt {
     float: none;
     padding-bottom: 0;
   }
 
-  .detail-facts dl > dd,
-  .tool-list dl > dd {
+  .detail-facts dl > dd {
     padding-left: 0;
     padding-top: .18rem;
   }
@@ -882,103 +755,5 @@ footer.footer .nav-footer {
   #quarto-header .navbar-brand {
     display: block;
     white-space: normal;
-  }
-}
-
-@media print {
-  @page {
-    size: A4;
-    margin: 16mm 18mm 17mm;
-  }
-
-  .cv-page {
-    --paper: #ffffff;
-    --ink: #263640;
-    --heading: #152d48;
-    --quiet: #4b5b6b;
-    --link: #254f73;
-    --rule: #d6dfe7;
-    font-size: 9.75pt;
-    line-height: 1.44;
-    padding-top: 0 !important;
-  }
-
-  .cv-page #quarto-header,
-  .cv-page #quarto-skip-link,
-  .cv-page footer.footer,
-  .cv-page .cv-download,
-  .cv-page .cv-web-link {
-    display: none !important;
-  }
-
-  .cv-page #quarto-content,
-  .cv-page #quarto-content > main.content {
-    display: block;
-    width: auto;
-    max-width: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .cv-page #title-block-header {
-    margin: 7mm 0 3mm;
-  }
-
-  .cv-page h1.title {
-    font-size: 32pt;
-  }
-
-  .cv-page #title-block-header .subtitle {
-    margin-top: 3mm;
-    font-size: 11.5pt;
-  }
-
-  .cv-page .cv-intro-actions {
-    margin: 0 0 6mm;
-  }
-
-  .cv-page .cv-contact a {
-    font-size: 9.75pt;
-  }
-
-  .cv-page .editorial-section {
-    display: block;
-    padding: 4mm 0;
-  }
-
-  .cv-page .section-label {
-    margin-bottom: 2.7mm;
-    break-after: avoid;
-  }
-
-  .cv-page h2 {
-    font-size: 15pt;
-  }
-
-  .cv-page h3 {
-    font-size: 11pt;
-  }
-
-  .cv-page .cv-record {
-    grid-template-columns: 43mm minmax(0, 1fr);
-    break-inside: avoid;
-    column-gap: 4mm;
-  }
-
-  .cv-page .cv-record + .cv-record {
-    margin-top: 2.3mm;
-    padding-top: 2.3mm;
-  }
-
-  .cv-page .record-date {
-    font-size: 8.4pt;
-  }
-
-  .cv-page .section-content a {
-    text-decoration: none;
-  }
-
-  .cv-page .cv-teaching {
-    break-before: page;
   }
 }

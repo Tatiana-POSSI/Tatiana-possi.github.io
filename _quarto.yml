@@ -9,10 +9,6 @@ project:
     - teaching/index.qmd
     - teaching/courses/**/*.qmd
     - cv/index.qmd
-    - code/index.qmd
-    - code/projects/**/*.qmd
-    - notes/index.qmd
-    - notes/posts/**/*.qmd
     - activities/index.qmd
     - activities/entries/**/*.qmd
   resources:
@@ -24,12 +20,12 @@ project:
     - references.bib
 
 website:
-  title: Rayda Tatiana Possi Tahabo
+  title: Tatiana POSSI
   site-url: https://tatiana-possi.github.io
-  description: Doctoral Researcher in Finance at the University of Luxembourg, working on time series econometrics and mathematical statistics.
+  description: Rayda Tatiana Possi Tahabo (Tatiana POSSI) is a PhD Student in Finance at the University of Luxembourg, studying time series econometrics and structural change.
   favicon: assets/images/favicon.png
   image: assets/images/share.png
-  image-alt: Rayda Tatiana Possi Tahabo, Doctoral Researcher in Finance at the University of Luxembourg
+  image-alt: Tatiana POSSI, PhD Student in Finance at the University of Luxembourg
   open-graph: true
   search:
     location: navbar
@@ -48,12 +44,8 @@ website:
         href: teaching/index.qmd
       - text: CV
         href: cv/index.qmd
-      - text: Code & Data
-        href: code/index.qmd
-      - text: Notes
-        href: notes/index.qmd
   page-footer:
-    left: Rayda Tatiana Possi Tahabo
+    left: Tatiana POSSI
     center:
       - text: rayda.possi@uni.lu
         href: mailto:rayda.possi@uni.lu

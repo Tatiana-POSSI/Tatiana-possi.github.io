@@ -1,170 +1,55 @@
 ---
-pagetitle: Rayda Tatiana Possi Tahabo
-description: Rayda Tatiana Possi Tahabo is a doctoral researcher in finance at the University of Luxembourg with interests in time series econometrics and structural change.
-title-block-style: none
+title: Tatiana POSSI
+subtitle: PhD Student in Finance · University of Luxembourg
+description: Rayda Tatiana Possi Tahabo (Tatiana POSSI) is a PhD Student in Finance at the University of Luxembourg, working on time series econometrics and structural change.
 body-classes: home-page
 html-math-method: plain
 include-in-header: _includes/person.html
-listing:
-  id: selected-research
-  contents: research/projects/**/*.qmd
-  template: _includes/research-list.ejs.md
-  template-params:
-    featured: true
-  sort: "year desc"
 ---
-
-::::::: {.home-intro}
-
-:::::: {.home-identity}
-
-[{{< meta academic.role >}}]{.eyebrow}
-
-# {{< meta academic.name >}} {#academic-profile .home-name}
-
-[{{< meta academic.affiliation >}}]{.home-affiliation}
-
-::::::
 
 ```{=html}
 <div class="home-profile">
   <figure class="home-portrait">
-    <img src="assets/images/rayda-tatiana-possi-tahabo.webp" width="900" height="1125" alt="Portrait of Rayda Tatiana Possi Tahabo" decoding="async" fetchpriority="high">
+    <img src="assets/images/rayda-tatiana-possi-tahabo.webp" width="900" height="1125" alt="Portrait of Tatiana POSSI" decoding="async" fetchpriority="high">
   </figure>
   <nav aria-label="Professional contact and profiles">
-    <ul class="professional-links">
-      <li class="professional-email"><a href="mailto:rayda.possi@uni.lu"><i class="bi bi-envelope" aria-hidden="true"></i>rayda.possi@uni.lu</a></li>
-      <li><a href="https://www.uni.lu/fdef-en/people/rayda-tatiana-possi-tahabo/"><i class="bi bi-building" aria-hidden="true"></i>University profile</a></li>
-      <li><a href="https://lu.linkedin.com/in/rayda-tatiana-possi-666500268"><i class="bi bi-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
-      <li><a href="https://github.com/Tatiana-POSSI"><i class="bi bi-github" aria-hidden="true"></i>GitHub</a></li>
+    <ul class="professional-links" role="list">
+      <li class="professional-email"><a href="mailto:rayda.possi@uni.lu">rayda.possi@uni.lu</a></li>
+      <li><a href="https://www.uni.lu/fdef-en/people/rayda-tatiana-possi-tahabo/">University profile</a></li>
+      <li><a href="https://lu.linkedin.com/in/rayda-tatiana-possi-666500268">LinkedIn</a></li>
     </ul>
   </nav>
 </div>
 ```
 
-:::::: {.home-biography}
+:::: {.home-biography}
 
-{{< include _includes/research-introduction.qmd >}}
+I am a PhD student in Finance at the University of Luxembourg. My research focuses on the development of residual-based theory and statistical methods for structural break detection in nonstationary multivariate time series models.
 
-My current work examines [partial sums of residuals in VARMA models](research/index.qmd#varma-partial-sum-residuals).
+## Main research fields
 
-I hold master's degrees in {{< meta academic.mqef >}} from the University of Luxembourg, Mathematical Sciences from the African Institute for Mathematical Sciences (AIMS), and Applied Mathematics from the University of Yaoundé I, where I specialised in probability, statistics and finance.
-
-::::: {.home-links}
-
-[Explore research](research/index.qmd){.action-primary} [View academic CV](cv/index.qmd){.action-text}
-
-:::::
-
-::::::
-
-:::::::
-
-::::::: {.award-feature}
-
-:::::: {.award-feature-date}
-
-[2025]{.eyebrow}
-
-::::::
-
-:::::: {.award-feature-content}
-
-## Economist Club Luxembourg Award
-
-Co-recipient of the prize for best master's thesis in {{< meta academic.mqef >}} at the University of Luxembourg.
-
-::::::
-
-[Honours and awards](cv/index.qmd#honours-and-awards){.action-text}
-
-:::::::
-
-::::::: {.editorial-section .home-section}
-
-:::::: {.section-label}
-
-## Research interests
-
-::::::
-
-:::::: {.section-content}
-
-{{< include _includes/research-interests.qmd >}}
-
-::::::
-
-:::::::
-
-::::::: {.editorial-section .home-section}
-
-:::::: {.section-label}
-
-## Selected master's research
-
-::::::
-
-:::::: {.section-content}
-
-::::: {#selected-research}
-
-:::::
-
-[All research](research/index.qmd){.action-text}
-
-::::::
-
-:::::::
-
-::::::: {.editorial-section .home-section .home-distinctions}
-
-:::::: {.section-label}
-
-## Selected distinctions
-
-::::::
-
-:::::: {.section-content}
-
-::::: {.compact-record}
-
-[Sep 2024 – Jul 2025]{.record-date}
-
-:::: {.record-copy}
-
-### ABBL Foundation Scholarship
-University of Luxembourg
+Time Series Econometrics, Mathematical Statistics, Financial Econometrics, and Asymptotic Theory.
 
 ::::
 
-:::::
+:::: {.home-details}
 
-::::: {.compact-record .quarto-include-in-search-index}
+## Education
 
-[June 2024]{.record-date}
+- PhD in Finance (ongoing), [University of Luxembourg](https://www.uni.lu/en/).
+- M.Sc. in Quantitative Economics and Finance, [University of Luxembourg](https://www.uni.lu/en/).
+- Master's in Mathematical Sciences, [African Institute for Mathematical Sciences (AIMS)](https://aims-cameroon.org/).
+- Master's in Applied Mathematics (Probability, Statistics and Finance), [University of Yaoundé I](https://uy1.uninet.cm/).
+- Bachelor's in Applied Mathematics, [University of Dschang](https://www.univ-dschang.org/).
 
-:::: {.record-copy}
+## Honours and awards
 
-### Winner, Prof. Marco Garuti Award
-AIMS Cameroon. Academic excellence award recognising the top-ranked female student, who placed second overall in the 2023–2024 cohort.
-
-::::
-
-:::::
-
-::::: {.compact-record}
-
-[June 2024]{.record-date}
-
-:::: {.record-copy}
-
-### Winner, Three Minutes Thesis Competition
-AIMS Cameroon Career Day
+- [Economist Club Luxembourg Award](https://www.uni.lu/fdef-en/news/recognising-achievement-and-partnership-at-fdefs-2025-partnership-event/) (2025), co-recipient.
+- ABBL Foundation Scholarship (2024–2025).
+- Prof. Marco Garuti Award (2024), best female student and second overall.
+- Winner of the Three Minutes Thesis Competition (2024).
+- Mastercard Foundation Scholarship (2023–2024).
+- Excellence Award, President of the Republic of Cameroon (2020, 2021 and 2022).
+- JESAM Excellence Award (2018).
 
 ::::
-
-:::::
-
-::::::
-
-:::::::

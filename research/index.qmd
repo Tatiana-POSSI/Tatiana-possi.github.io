@@ -41,9 +41,9 @@ listing:
 
 [Manuscript in preparation · University of Luxembourg · 2026–present]{.record-meta}
 
-### On VARMA Partial Sum Residuals {#varma-partial-sum-residuals}
+### On Structural Change Detection in the Presence of Trends {#structural-change-detection-in-the-presence-of-trends}
 
-The project investigates the asymptotic behaviour of residual partial-sum processes in VARMA models with polynomial time trends and unit roots. It aims to develop methods for detecting structural breaks and identifying the affected components of multivariate time series. The work combines theoretical analysis with empirical applications to inflation dynamics and disaggregated price indices.
+The project investigates the asymptotic behaviour of residual partial-sum processes in VARMA models with polynomial time trends and unit roots. It aims to develop statistical methods for detecting structural breaks and identifying the affected components of multivariate time series. The work combines theoretical analysis with empirical applications to inflation dynamics and disaggregated price indices.
 
 :::::
 
