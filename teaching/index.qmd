@@ -1,7 +1,7 @@
 ---
 title: Teaching
-subtitle: Stochastic calculus for finance and prior science teaching.
-description: Teaching experience of Rayda Tatiana Possi Tahabo at the University of Luxembourg and in Yaoundé, Cameroon.
+subtitle: University teaching and educational experience.
+description: University teaching and educational experience of Rayda Tatiana Possi Tahabo in Luxembourg and Cameroon.
 body-classes: section-page
 html-math-method: plain
 listing:
@@ -33,7 +33,7 @@ listing:
 
 :::::: {.section-label}
 
-## Previous teaching
+## Previous teaching and educational experience
 
 ::::::
 
@@ -46,6 +46,18 @@ listing:
 ### Volunteer Science Teacher
 
 Taught science courses at an examination preparation centre in Yaoundé, Cameroon.
+
+:::::
+
+::::: {.record-body .quarto-include-in-search-index}
+
+[June – August 2022]{.record-meta}
+
+### Youth Social Worker — Teaching and Mentoring
+
+Ministry of Youth, Cameroon · Bafoussam, Cameroon.
+
+Delivered practical training and educational activities for young people, including instruction in craft customisation and pastry-making, while supporting youth social integration and mentoring young girls.
 
 :::::
 

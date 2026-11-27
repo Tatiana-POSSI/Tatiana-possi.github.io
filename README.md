@@ -1,6 +1,6 @@
-# Rayda Tatiana Possi Tahabo
+# Tatiana POSSI
 
-This Quarto website presents academic research, teaching, education and computational work. You can request changes in natural language. Point to the page, supply the approved information, and describe what should change.
+This Quarto website presents academic research, teaching and education. You can request changes in natural language. Point to the page, supply the approved information, and describe what should change.
 
 ## Local review
 
@@ -19,18 +19,17 @@ For a private review, render with `quarto render --profile review --output-dir _
 | Update | Where it belongs |
 | --- | --- |
 | Name, appointment, affiliation or programme wording | `_academic.yml` and the corresponding page metadata and homepage Person record |
-| Homepage biography or selected distinctions | `index.qmd` |
-| Professional contact links | `index.qmd`, `_quarto.yml`, `cv/index.qmd` and the homepage Person record |
-| Research interests | `_includes/research-interests.qmd`, shared by Home and Research |
+| Homepage introduction, research fields, education or honours | `index.qmd` |
+| Professional contact links | `index.qmd`, `_quarto.yml` and the homepage Person record |
+| Research page interests | `_includes/research-interests.qmd` |
 | Thesis, paper or publication | `research/projects/` and `references.bib` |
-| Course, code or activity record | `teaching/courses/`, `code/projects/` or `activities/entries/` |
-| Research note | `notes/posts/` |
+| Course or activity record | `teaching/courses/` or `activities/entries/` |
 | Approved public media | `assets/images/` or `assets/documents/approved/` |
 | Appearance and site navigation | `styles/` and `_quarto.yml` |
 
-The reusable Quarto files under `templates/` cover papers, course pages, talks, code projects and notes. The notes example shows equation numbering, cross-references, definitions, lemmas, proofs, figures, tables, citations and MATLAB, Python and R syntax highlighting. The render allowlist excludes those files. Put content that is still private outside the tracked repository.
+The reusable Quarto files under `templates/` cover papers, course pages and talks. The render allowlist excludes those files. Keep private examples and unpublished content outside the tracked repository.
 
-Research listings use each record’s `research-type` and `year`. Only types with approved entries appear. Set `featured: true` for a master's thesis to include it on the homepage. Notes use a real publication date and categories. The notes index sorts by newest date and provides filtering and categories as posts are added.
+Research listings use each record’s `research-type` and `year`. Only types with approved entries appear.
 
 Reconcile academic names and dates against the latest CV provided privately and record any discrepancies for review. Add a professional email only after Rayda approves that specific address. Verify supplied academic profile URLs. Web portraits need descriptive alternative text and stripped metadata.
 

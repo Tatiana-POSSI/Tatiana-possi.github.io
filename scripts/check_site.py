@@ -13,10 +13,9 @@ MAIN_PAGES = (
     "research/index.html",
     "teaching/index.html",
     "cv/index.html",
-    "code/index.html",
-    "notes/index.html",
 )
 PRIVATE_DIRECTORIES = ("templates", "private", "scripts", ".github")
+RETIRED_DIRECTORIES = ("code/", "notes/")
 PUBLIC_CV = "assets/documents/approved/Rayda-Tatiana-Possi-Tahabo-CV.pdf"
 GOOGLE_VERIFICATION_FILE = "google41220a8d21a06f51.html"
 
@@ -61,7 +60,9 @@ def check(root, base_url, review):
     files = [path for path in root.rglob("*") if path.is_file()]
     relative_files = {path.relative_to(root).as_posix() for path in files}
     for name in sorted(relative_files):
-        if (
+        if name.startswith(RETIRED_DIRECTORIES):
+            errors.append(f"Retired section in the rendered site: {name}")
+        elif (
             name.split("/")[0] in PRIVATE_DIRECTORIES
             or name.endswith((".qmd", ".ejs", ".ejs.md"))
             or name.startswith("assets/documents/review/")
@@ -133,7 +134,9 @@ def check(root, base_url, review):
         search = json.loads(index.read_text(encoding="utf-8"))
         indexed = {item["href"].split("#", 1)[0] for item in search}
         if not set(MAIN_PAGES).issubset(indexed):
-            errors.append("Website search does not index all six main pages")
+            errors.append("Website search does not index all four main pages")
+        if any(name.lstrip("/").startswith(RETIRED_DIRECTORIES) for name in indexed):
+            errors.append("Website search indexes a retired section")
     if "sitemap.xml" in relative_files and base_url:
         sitemap = ElementTree.parse(root / "sitemap.xml")
         locations = Counter(element.text for element in sitemap.findall(".//{*}loc"))
