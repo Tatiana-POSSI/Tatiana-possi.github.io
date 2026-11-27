@@ -17,7 +17,7 @@ MAIN_PAGES = (
     "notes/index.html",
 )
 PRIVATE_DIRECTORIES = ("templates", "private", "scripts", ".github")
-PUBLIC_CV = "assets/documents/approved/rayda-tatiana-possi-tahabo-cv.pdf"
+PUBLIC_CV = "assets/documents/approved/Rayda-Tatiana-Possi-Tahabo-CV.pdf"
 GOOGLE_VERIFICATION_FILE = "google41220a8d21a06f51.html"
 
 
@@ -72,6 +72,11 @@ def check(root, base_url, review):
         required.add("sitemap.xml")
     for missing in sorted(required - relative_files):
         errors.append(f"Missing expected output: {missing}")
+
+    if PUBLIC_CV in relative_files:
+        approved_cv = Path(__file__).resolve().parents[1] / PUBLIC_CV
+        if not approved_cv.is_file() or (root / PUBLIC_CV).read_bytes() != approved_cv.read_bytes():
+            errors.append(f"Rendered CV differs from the approved static PDF: {PUBLIC_CV}")
 
     verification_file = root / GOOGLE_VERIFICATION_FILE
     if GOOGLE_VERIFICATION_FILE in relative_files:

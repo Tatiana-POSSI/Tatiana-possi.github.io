@@ -15,7 +15,7 @@ body-classes: section-page cv-page
 
 :::::: {.cv-download}
 
-[Download CV (PDF)](../assets/documents/approved/rayda-tatiana-possi-tahabo-cv.pdf){.action-primary download=""}
+[Download CV (PDF)](../assets/documents/approved/Rayda-Tatiana-Possi-Tahabo-CV.pdf){.action-primary download=""}
 
 ::::::
 
@@ -40,7 +40,40 @@ body-classes: section-page cv-page
 ### {{< meta academic.role >}} {#doctoral-appointment}
 {{< meta academic.affiliation >}}
 
-Research area · Time Series Analysis.
+Supervisor · {{< meta academic.supervisor >}}
+
+Research areas · Time series econometrics, mathematical statistics, financial econometrics, and asymptotic theory.
+
+Research focus · Development of residual-based theory and statistical methods for structural break detection in nonstationary multivariate time series models.
+
+::::
+
+:::::
+
+::::::
+
+:::::::
+
+::::::: {.editorial-section}
+
+:::::: {.section-label}
+
+## Research in progress
+
+::::::
+
+:::::: {.section-content}
+
+::::: {.cv-record .quarto-include-in-search-index}
+
+[2026–present]{.record-date}
+
+:::: {.record-copy}
+
+### [On VARMA Partial Sum Residuals](../research/index.qmd#varma-partial-sum-residuals)
+University of Luxembourg · Manuscript in preparation.
+
+Investigates the asymptotic behaviour of residual partial sums in VARMA models with polynomial time trends and unit roots.
 
 ::::
 
@@ -213,6 +246,19 @@ Co-recipient of the prize for best master's thesis in {{< meta academic.mqef >}}
 
 ### ABBL Foundation Scholarship
 University of Luxembourg.
+
+::::
+
+:::::
+
+::::: {.cv-record .quarto-include-in-search-index}
+
+[June 2024]{.record-date}
+
+:::: {.record-copy}
+
+### Winner, Prof. Marco Garuti Award
+AIMS Cameroon. Academic excellence award recognising the top-ranked female student, who placed second overall in the 2023–2024 cohort.
 
 ::::
 

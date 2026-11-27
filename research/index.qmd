@@ -21,9 +21,33 @@ listing:
 
 :::::: {.section-content}
 
-My doctoral research focuses on statistical methods for detecting structural breaks in time series models. I investigate the asymptotic behaviour of residual partial-sum processes in ARMA, ARMAX and multivariate models, including specifications with deterministic trends and unit roots.
+My doctoral research develops residual-based theory and statistical methods for detecting structural breaks in nonstationary multivariate time series models.
 
-My broader interests include asymptotic inference, statistical testing, and applications to economics and finance.
+Supervisor · {{< meta academic.supervisor >}}
+
+::::::
+
+:::::::
+
+::::::: {.editorial-section}
+
+:::::: {.section-label}
+
+## Research in progress
+
+::::::
+
+:::::: {.section-content}
+
+::::: {.research-record .quarto-include-in-search-index}
+
+[Manuscript in preparation · University of Luxembourg · 2026–present]{.record-meta}
+
+### On VARMA Partial Sum Residuals {#varma-partial-sum-residuals}
+
+The project investigates the asymptotic behaviour of residual partial-sum processes in VARMA models with polynomial time trends and unit roots. It aims to develop methods for detecting structural breaks and identifying the affected components of multivariate time series. The work combines theoretical analysis with empirical applications to inflation dynamics and disaggregated price indices.
+
+:::::
 
 ::::::
 
