@@ -44,7 +44,9 @@ listing:
 
 :::::: {.home-biography}
 
-I develop residual-based theory and statistical methods for detecting structural breaks in nonstationary multivariate time series models, under the supervision of {{< meta academic.supervisor >}}. My current work examines [partial sums of residuals in VARMA models](research/index.qmd#varma-partial-sum-residuals).
+{{< include _includes/research-introduction.qmd >}}
+
+My current work examines [partial sums of residuals in VARMA models](research/index.qmd#varma-partial-sum-residuals).
 
 I hold master's degrees in {{< meta academic.mqef >}} from the University of Luxembourg, Mathematical Sciences from the African Institute for Mathematical Sciences (AIMS), and Applied Mathematics from the University of Yaoundé I, where I specialised in probability, statistics and finance.
 

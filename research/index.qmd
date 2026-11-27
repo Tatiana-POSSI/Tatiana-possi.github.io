@@ -21,9 +21,7 @@ listing:
 
 :::::: {.section-content}
 
-My doctoral research develops residual-based theory and statistical methods for detecting structural breaks in nonstationary multivariate time series models.
-
-Supervisor · {{< meta academic.supervisor >}}
+{{< include ../_includes/research-introduction.qmd >}}
 
 ::::::
 
